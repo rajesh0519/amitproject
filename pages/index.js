@@ -24,9 +24,9 @@ export default function Home() {
 
           <div className="card_container">
             {
-              users.map((data)=>{
+              users.map((data,index)=>{
                 return(
-                    <div className="card">
+                    <div className="card" key={index} >
                       <div>
                         <img src='/profile.png'></img>
                       </div>
